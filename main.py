@@ -14,7 +14,7 @@ def letter_counter(text):
     return letter_count_dict
 
 def print_letter_counts(letter_count_dict):
-    for letter, count in sorted(letter_count_dict.items()):
+    for letter, count in sorted(letter_count_dict.items(), key= lambda x:x[1]):
         print(f"The {letter} character was found {count} times")
 
 def main():
